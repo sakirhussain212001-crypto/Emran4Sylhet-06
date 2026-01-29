@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: linear-gradient(#1b5e20, #003300);
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+#game {
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 360px;
+  height: 400px;
+  background: #0a3d1c;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid gold;
+}
+
+#runner {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 50px;
+  animation: run 0.5s infinite alternate;
+}
+
+@keyframes run {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+.coin {
+  position: absolute;
+  padding: 6px 12px;
+  background: gold;
+  color: #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#msg {
+  font-size: 18px;
+  margin-top: 10px;
+}
